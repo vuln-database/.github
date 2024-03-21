@@ -14,9 +14,15 @@ Enjoy
 # Create and go to the new folder
 mkdir vdb
 cd vdb
+
+# Clone the components of the software
 git clone https://github.com/vuln-database/vdb-front.git
 git clone https://github.com/vuln-database/vdb-middle.git
 git clone https://github.com/vuln-database/vdb-back.git
 
 # Start the middleware
+cd vdb-middle
+npm install
+#npm run --test
+npm start
 ```
